@@ -1,0 +1,42 @@
+package models;
+
+import textures.ModelTexture;
+
+public class TexturedModel {
+	
+	private RawModel rawModel;
+	private ModelTexture texture;
+	
+	private float shineDamper = 1;
+	private float reflectivity = 0;
+	
+	public float getShineDamper() {
+		return shineDamper;
+	}
+
+	public void setShineDamper(float shineDamper) {
+		this.shineDamper = shineDamper;
+	}
+
+	public float getReflectivity() {
+		return reflectivity;
+	}
+
+	public void setReflectivity(float reflectivity) {
+		this.reflectivity = reflectivity;
+	}
+
+	public TexturedModel(RawModel model, ModelTexture texture){
+		this.rawModel = model;
+		this.texture = texture;
+	}
+
+	public RawModel getRawModel() {
+		return rawModel;
+	}
+
+	public ModelTexture getTexture() {
+		return texture;
+	}
+
+}
